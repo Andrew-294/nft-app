@@ -1,5 +1,6 @@
 import { Sidebar } from "@/components/sidebar/Sidebar";
 import "./globals.css";
+import { Footer } from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Mint NFT",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <Sidebar />
         {children}
+        <Footer />
       </body>
     </html>
   );

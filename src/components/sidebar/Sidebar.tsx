@@ -2,7 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Link from "next/link";
+import { LinksMapSidebar } from "./sidebar-links";
 
 export function Sidebar() {
   const [isOpened, setIsOpened] = useState(false);
@@ -41,22 +41,7 @@ export function Sidebar() {
         </div>
 
         {/* Ссылки */}
-        <nav className="flex flex-col space-y-4 px-6 pt-6">
-          <Link
-            href="/"
-            onClick={() => setIsOpened(false)}
-            className="hover:text-pink-400 transition"
-          >
-            🖼 Галерея
-          </Link>
-          <Link
-            href="/newcontract"
-            onClick={() => setIsOpened(false)}
-            className="hover:text-purple-400 transition"
-          >
-            🛠 Установить контракт
-          </Link>
-        </nav>
+        <LinksMapSidebar setIsOpened={setIsOpened} />
       </div>
     </>
   );

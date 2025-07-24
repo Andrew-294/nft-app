@@ -5,3 +5,8 @@ export type NFTData = {
   image: string;
   sold: boolean;
 };
+
+export interface LinksTypes {
+  name: string;
+  link: string;
+}

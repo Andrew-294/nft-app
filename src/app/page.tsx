@@ -6,6 +6,7 @@ import { Sepolia } from "@thirdweb-dev/chains";
 import { NFTData } from "@/types/types";
 import ImageWithLoader from "@/components/loader/ImageWithLoader";
 import Image from "next/image";
+import { Footer } from "@/components/footer/Footer";
 
 function shortDescription(description: string) {
   if (description.length > 87) {
